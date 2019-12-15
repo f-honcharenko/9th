@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>девятый этаж</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div id="main-wrapper">
+	<div id="main-wrapper-flex-void"></div>
+	<div id="main-content">
+
+
+		<div id="main-content-wrapper">
+		<div id="options-wraper"></div>
+		<div id="options-2">
+				<div  class="test7">
+					Громкость: <input type="range" id="range1">
+				</div>
+				<div style="padding-top: 20px;"  class="test7">
+					<div>Перейти в выбранную локацию<small>(beta)</small>:</div> 
+					<select id="goinloca">
+					 	<option id="l1">1</option>
+						<option id="l2">2</option>
+					 	<option id="l3">3</option>
+					 	<option id="l4">4</option>
+					 	<option id="l6">6</option>
+					 	<option id="l7">7</option>
+					 	<option id="l8">8</option>
+					 	<option id="l9">promo</option>
+					</select>
+					<input type="button" onclick="gowaway()" value="Перейти">
+				</div>
+				<div id="saver_locations">
+					Сохранить: <input type="button" id="saver01" onclick="saver01();" value="save">
+				</div>
+					<!-- <input type="button" id="close_div" value="Назад" onclick="oprions_c();"> -->
+
+		</div>
+		<div id="options-3">
+				<b>Управление:</b>
+
+				<ul style="list-style-type: none;" id="list-help">
+					<li>Esc - настройки.</li>
+					<li>PgUp - переместить выделение вверх.</li>
+					<li>PgDwn - переместить выделение вниз.</li>
+					<li>Enter - выбрать.</li>
+				</ul>
+				<b>Художник:</b>
+				<li style="list-style-type: none;">нет глаз - нет слез</li>
+
+		</div>
+
+			<div id="main-content-image">
+				<!-- <img src="img/img-test1.jpg" id="main-content-image-element"> -->
+				<img src="media/9th.gif" id="main-content-image-element">
+				<img src="profiles/GG-profile1.png" id="main-content-image-profile" />
+
+						<div id="main-content-image-wrapper">
+						<div id="main-image-btns-background">
+							<div class="menu-void"></div>
+							<div class="menu-void"></div>
+							<div class="menu-void"></div>
+							<div id="menu-content-cetntral">
+								<div class="menu-cetntral-btns active_btn_1" id="btn_m_0"></div>
+								<div class="menu-cetntral-btns" id="btn_m_1"></div>
+								<div class="menu-cetntral-btns" id="btn_m_2"></div>
+							</div>
+							<div class="menu-void"></div>
+
+							<div id="menu-content-right">
+								<div class="menu-right-btns active_btn_2" id="btn_r_0">НОВАЯ ИГРА</div>
+								<div class="menu-right-btns" id="btn_r_1">ПРОДОЛЖИТЬ</div>
+								<div class="menu-right-btns" id="btn_r_2">ПОМОЩЬ</div>
+							</div>
+							<div class="menu-void"></div>
+							
+						</div>
+						<div id="main-image-text_q-background"><div id="main-image-text_q-background-style"></div></div>
+						<div id = "main-image-text_bc-content"></div>
+					</div> 
+				</div>
+
+				</div>
+			<div id="main-content-blacker"></div>
+
+			</div>
+		</div>
+	</div>
+	<div id="main-wrapper-flex-void"></div>
+	
+
+</div>
+
+<!-- <div id="bg_o">
+	<div class="void-7"></div>
+	<div id = "options-wraper">
+		<div id="options-wrapper-in">
+			<div class="void-7"></div>
+			<div id="options-content">
+				<div>
+					Громкость: <input type="range" id="range1">
+				</div>
+				<div id="saver_locations">
+					Сохранить: <input type="button" id="saver01" onclick="saver01();" value="save">
+				</div>
+				<div style="padding-top: 20px;">
+					Перейти в выбранную локацию(beta): 
+<select id="goinloca">
+  <option id="l1">1</option>
+  <option id="l2">2</option>
+  <option id="l3">3</option>
+  <option id="l4">4</option>
+  <option id="l6">6</option>
+  <option id="l7">7</option>
+  <option id="l8">8</option>
+  <option id="l9">9</option>
+</select>
+					<input type="button" onclick="gowaway()" value="Перейти">
+				</div>
+				<div id="close_div">
+					<input type="button" value="Закрыть меню" onclick="oprions_c();">
+				</div>
+			</div>
+			<div class="void-7"></div>
+		</div>
+	</div>
+	<div class="void-7"></div>
+</div> -->
+<audio src="media/background.m4a" id="player1" loop="loop">
+	
+</audio>
+
+<!-- <script type="text/javascript" src="scripts/tools.js"></script> -->
+<!-- <script type="text/javascript" src="scripts/loader.js"></script> -->
+<script type="text/javascript" src="bd/locations.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="scripts/printmachine.js"></script>
+<script type="text/javascript" src="scripts/media.js"></script>
+
+</body>
+</html>

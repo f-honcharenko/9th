@@ -1,0 +1,295 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 20pt;
+	font-family: Courier New, monospace;
+
+}
+html, body {margin: 0; height: 100%; overflow: hidden}
+#machineType, #machineType-change{
+	display: inline-block;
+}
+#main-wrapper{
+	display: flex;
+	justify-content: center;
+}
+#main-wrapper-flex-void{
+	/*flex:1;*/
+	background-color: yellow;
+}
+#main-content{
+	/*flex:4;*/
+	/*background-color: blue;*/
+}
+#main-content-wrapper{
+	height: 720px; /*Убрать после верстки*/
+}
+#main-content-image{
+	display: flex;
+}
+#main-content-image-flex1{
+	/*flex:1;*/
+	/*background-color: orange;/*Убрать после верстки*/
+
+}
+#main-content-image-flex2{
+	/*flex:3;*/
+	/*background-color: green;Убрать после верстки*/
+	height: 720px; /*Убрать после верстки*/
+
+}
+#main-content-image-flex3{
+	/*flex:1;*/
+	justify-content: center;
+	/*background-color: orange;/*Убрать после верстки*/
+}
+#main-image-text_bc-wrapper{
+	margin-top:300px;/*Изменить после верстки*/
+	/*background-color: blue;Убрать после верстки*/
+	text-align: center;
+	word-wrap: break-word;
+}
+
+#main-image-text_q-btns-wrapper{
+	/*position: absolute;*/
+	opacity: 0.4;
+	margin-top: -20px;
+	text-align: center;
+	background-color: black;
+}
+#main-content-image-flex3-btns-wrapper{
+	margin-top: 60px;/*Изменить после верстки*/
+	text-align: center;
+	/*background-color: blue;Убрать после верстки*/
+
+}
+#main-content-image-element{
+	/*position: relative;*/
+	z-index: -1;
+	width:1280px;
+	height:720px;
+}
+#main-content-image-profile{
+	opacity: 0.0;
+	transition: 0.3s;
+	position: absolute;
+	z-index: 10;
+	width:1280px;
+	height:720px;
+	/*border: 0px solid black;*/
+}
+#main-content-image-wrapper{
+	width: 1280px;
+	height: 720px;
+	display: block;
+	justify-content: space-around;
+	position: absolute;
+	/*background-color: red;*/
+}
+#main-image-btns-background{
+	text-align: center;
+	display: flex;
+	word-wrap: break-word;
+	width:1200px;
+	/*background-color: gray;*/
+	border-radius: 2px;
+	position: relative;
+	left: 40px;
+	height: 180px;
+	top: 507px;
+	z-index: 6;/*4*/
+
+
+}
+#main-image-text_q-background{
+	text-align: center;
+	display: flex;
+	word-wrap: break-word;
+	width:1200px;
+	background-color: #00000073;;
+	opacity: 0.0;
+	border-radius: 4px;
+	position: relative;
+	left: 39px;
+	height: 180px;
+	top: 327px;
+	z-index: 5;
+	transition: 0.3s;
+	/*z-index: -100;*/
+
+}
+#main-image-text_bc-content{
+	/*background-color: blue;*/
+	text-align: center;
+	opacity: 1.0;
+	word-wrap: break-word;
+	width:1200px;
+	position: relative;
+	left: 40px;
+	height: 180px;
+	top: -80px;
+	transition: 0.3s;
+}
+.menu-void{
+	flex:1;
+	/*background-color: black;*/
+}
+#main-image-text_q-background-style{
+	opacity: 1;/*!*/
+	padding-top: 70px;
+	word-wrap: normal;
+	word-break: keep-all;
+	color: white;
+	text-align: center;
+	width: 1200px;
+	/*font-weight: 900;*/
+}
+#menu-content-cetntral{
+	padding-top: 30px;
+	opacity: 0.0;
+	/*padding-bottom: 30px;*/
+	transition: 0.3s;
+	flex:1;
+	/*background-color: pink;*/
+}
+#menu-content-right{
+	transition: 0.3s;
+	opacity: 0.0;
+	padding-top: 60px;
+	/*font-weight: 900;*/
+	flex:1;
+	/*background-color: pink;*/
+}
+.menu-cetntral-btns{
+	margin-top: 5px;
+	color: white;
+	width: 400px;
+}
+.menu-right-btns{
+	text-align: center;
+	margin-top: 5px;
+	color: white;
+	font-weight: 900;
+}
+#main-content-blacker{
+	width: 1280px;
+	height: 720px;
+	background-color: none;
+	position:relative;
+	top:-720px;
+	z-index: 100;
+	transition: 0.3s;	
+}/*
+#btn_r_0{
+	background-color: gray; color: black;
+}Без понятия почему эта херня не работает*/
+@keyframes coloring {
+	0%{background-color: rgba(0,0,0,0)
+		color:white;}
+	100%{background-color: grey;
+		color:black;}
+}
+@keyframes blink {
+	0%{opacity: 0.0;}
+	100%{opacity: 1.0;}
+}
+.active_btn_1{
+	background-color: white;
+	color:black;
+}
+
+.active_btn_2{
+	background-color: gray; 
+	color: black;
+}
+#range1{
+	/*transform: rotate(270deg);*/
+	width: 100px;
+	/*margin-right: 200px;*/
+	/*float: right;*/
+}
+#volume-img{
+	width:100px;
+	height:100px;
+}
+#vol-content{
+	position: absolute;
+	top:100px;
+}
+#bg_o{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000000bf;
+	z-index: 1000;
+	display: none;
+}
+.void-7{
+	flex:1;
+}
+#options-wraper{
+	flex:3;
+	/*background-color: white;*/
+}
+#options-wrapper-in{
+	display: flex;
+	margin: 100px 0px auto 0px;
+	background-color: #275336f2;;
+	width:100%;
+	height: 500px;
+	border: 2px solid #023915f0;
+	border-radius: 5px;
+}
+#options-content{
+	flex:5;
+	/*border: 2px solid #023915f0;*/
+	/*background-color: red;*/
+	margin:30px;
+}
+#close_div{
+	float: right;
+	position: absolute;
+	/*right: 50%;*/
+	bottom: 10px;
+	right: 10px;
+}
+#options-2{
+	/*float: right;*/
+	width:300px;
+	height: 720px;
+	position: absolute;
+	/*right:100px;*/
+	z-index: -10000;
+	/*color: gray;*/
+	background-color: #a3abab;
+	/*background-color: gray;*/
+	/*padding-right:  10px;*/
+	transition: 0.3s;
+}
+#options-3{
+	/*float: right;*/
+	margin-left: 980px;
+	width:300px;
+	height: 720px;
+	position: absolute;
+	/*right:100px;*/
+	z-index: -10000;
+	/*color: gray;*/
+	background-color: #a3abab;
+	/*background-color: gray;*/
+	/*padding-right:  10px;*/
+	transition: 0.3s;
+}
+
+#list-help li{
+	margin-top:5px;
+}
+#options-wraper{
+	position: absolute;
+	width: 1280px;
+	height: 720px;
+	background-color: white;
+	z-index: -9999;
+}
