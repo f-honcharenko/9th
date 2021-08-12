@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var options = {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+    };
+
+    function success(pos) {
+        var crd = pos.coords;
+
+        console.log('Ваше текущее местоположение:');
+        alert(`Широта: ${crd.latitude}\nДолгота: ${crd.longitude}\nПлюс-минус ${crd.accuracy} метров.`);
+        //   console.log(`Широта: ${crd.latitude}\nДолгота: ${crd.longitude}\Плюс-минус ${crd.accuracy} метров.`);
+        //   console.log(`Долгота: ${crd.longitude}`);
+        //   console.log(`Плюс-минус ${crd.accuracy} метров.`);
+    };
+
+    function error(err) {
+        console.warn(`ERROR(${err.code}): ${err.message}`);
+    };
+
+    navigator.geolocation.getCurrentPosition(success, error, options);
+</script>
+
+<body>
+
+</body>
+
+</html>
